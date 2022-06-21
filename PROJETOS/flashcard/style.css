@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,500;0,600;0,700;0,900;1,100&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+body {
+    background: white;
+    color: #fff;
+    font-size: 1rem;
+}
+
+header {
+    background-color: #004e92;
+}
+
+button {
+    padding: 8px;
+    outline: none;
+    cursor: pointer;
+    border: 1px solid rgb(216, 216, 216);
+    background-color: white;
+}
+
+button:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    width: 95%;
+    margin: auto;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+    padding: 20px 0;  
+}
+
+.nav button {
+    border-radius: .8rem;
+    padding: 1rem;
+    margin: 0 .6rem;
+}
+
+.create-box {
+    width: 380px;
+    margin: auto;
+    padding: 20px;
+    margin-top: 2rem;
+    border-radius: 1rem;
+    background-color: violet;
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.5);
+}
+
+.create-box textarea {
+    width: 100%;
+    border-radius: .6rem;
+    border: 1px solid lightcyan;
+}
+
+.create-box button {
+    width: fit-content;
+}
+
+.flashcards {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: auto;
+    margin-top: 10px;
+    padding: 0 10px;
+}
+
+.flashcard {
+    width: 370px;
+    height: 200px;
+    word-wrap: break-word;
+    margin: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.5);
+}
+
+.flashcard h2 {
+    font-size: 1rem;
+}
+
+
+/*----- Responsive media -----*/
+
+@media (max-width:768px) {
+    .flashcard {
+        margin: auto;
+    }
+    .flashcards {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width:480px) {
+
+    .nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav button {
+        margin-top: 1rem;
+    }
+
+    .create-box {
+        width: 100%;
+    }
+
+    .flashcard {
+        width: 100%;
+    }
+}

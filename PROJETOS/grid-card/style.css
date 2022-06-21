@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    background-color: #111;
+}
+
+.tittle {
+    font-size: 10rem;
+    color: #fff;
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10rem;
+}
+
+section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    max-width: 98rem;
+    padding: 1.5rem;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    grid-gap: 1.5rem;
+}
+
+.card {
+    font-family: sans-serif;
+    background-color: #262525;
+    color: #fff;
+    padding: 1.5rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.card-tittle-large {
+    font-family: fantasy;
+    font-size: 10rem;
+    letter-spacing: .5rem;
+    transform: translateX(7rem);
+    color: #1d1d1d;
+    transition: transform 5s ease;
+}
+
+.card-tittle-small {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+}
+
+.card-description {
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+.card-cta {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    margin-top: 1rem;
+    align-self: flex-end;
+}
+
+.card:hover .card-tittle-large {
+    transform: translateX(-150%);
+    color: #fff;
+}
+
+.card.aomine:hover {
+    background-color: #1d3270;
+}
+
+.card.kuroko:hover {
+    background-color: #b7d7f3;
+}
+
+.card.kise:hover {
+    background-color: #ffdf7b;
+}

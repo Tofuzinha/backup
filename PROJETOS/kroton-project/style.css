@@ -1,0 +1,653 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap');
+
+/*Gerais*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+/*atalhos*/
+
+:root {
+    --primary-color: #2ebd59;
+    --gray-color: #262626;
+    --white-color: #fff;
+
+    --light-gray-color: #f4f5f6;
+
+    --buttom-color: #e29335;
+}
+
+/*especificaçoes gerais*/
+
+.container {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+p {
+    color: var(--gray-color);
+}
+
+ul li {
+    color: var(--gray-color);
+}
+
+.logo {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+} 
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+} 
+
+.buttom {
+    width: 21.8rem;
+    height: 2.8rem;
+    background-color: var(--buttom-color);
+    border-radius: 20px;
+    border: 8px solid var(--buttom-color);
+    text-align: center;
+    padding: 0;
+}
+
+/* ----- Header ----- */
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
+    position: fixed;
+    z-index: 1;
+    background-color: var(--white-color);
+    box-shadow: 1px 1px 10px #ccc;
+    overflow: hidden;
+}
+
+/*Logo*/
+#header .logo img {
+    width: 9rem;
+}
+
+/*menu*/
+#header .menu {
+    position: relative;
+    right: 5rem;
+}
+
+#header .menu ul li {
+    list-style: none;
+
+}
+
+#header .menu ul li a {
+    text-decoration: none;
+    font-size: .9rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--gray-color);
+}
+
+#header .menu ul li a:hover {
+    color: var(--primary-color);
+}
+
+/* ----- End Header ----- */
+
+/* ----- Hero Banner ----- */
+
+#hero .hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url(img/banner.jpeg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    
+}
+
+#hero .hero .hero-all {
+    width: 100%;
+    height: 40vh;
+    background-image: linear-gradient(to right,#2ebd59, #0fad19, #2ebd59);
+    position: relative;
+    top: 15rem;
+
+}
+
+#hero .hero .hero-all .hero-info {
+    width: 25rem;
+    height: auto;
+    position: relative;
+    display: flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 20px;
+    color: var(--white-color);
+}
+
+.hero-all .hero-info h1 {
+    font-size: 1.8rem;
+    padding: 20px 10px 0 0;
+}
+
+.hero-all .hero-info p {
+    font-size: .9rem;
+    font-weight: 300;
+    padding: 20px 0;
+    color: var(--white-color);
+}
+
+.hero-all .hero-info .buttom-logo {
+    display: flex;
+    flex-direction: row;
+    column-gap: 5rem;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.hero-all .hero-info .buttom-logo .buttom a {
+    text-decoration: none;
+    color: var(--white-color);
+    font-size: .9rem;
+    cursor: pointer;
+}
+
+#hero .logo img {
+    width: 8rem;
+    height: auto;
+    position: relative;
+    left: 0;
+}
+
+/* ----- End Hero Banner ----- */
+
+/* ----- Section Vantagens ----- */
+#vantagens .vantagens {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#vantagens .vantagens h2 {
+    padding: 40px 0;
+    font-size: 2rem;
+    color: var(--gray-color);
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+#vantagens .vantagens .items-vantagens {
+    width: 12rem;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.vantagens .item-vantagem img {
+    width: 12rem;
+    height: auto;
+    
+}
+
+.vantagens .item-vantagem h3 {
+    color: var(--gray-color);
+    font-size: 1rem;
+    padding: 10px 0;
+}
+
+.vantagens .item-vantagem p {
+    color: var(--gray-color);
+    font-size: .7;
+    font-weight: 300;
+    padding: 10px 0 50px 0;
+}
+
+/* ----- End Section Vantagens ----- */
+
+/* ----- Section Courses ----- */
+
+/*slide ampli*/
+#courses .courses {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--light-gray-color);
+    position: relative;
+    padding: 50px 0;
+    
+}
+
+#courses .courses .bar-top {
+    width: 22.8rem;
+    height: 21.8rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--white-color);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px #ccc;
+}
+
+#courses .courses .bar-top .logo {
+    width: 8rem;
+    height: auto;
+}
+
+#courses .courses .bar-top .buttom {
+    width: 11rem;
+}
+
+#courses .courses .bar-top .buttom a {
+    text-decoration: none;
+    color: var(--white-color);
+    font-weight: 600;
+    text-align: center;
+}
+
+
+#courses .courses .bar-top ul li {
+    width: 19rem; 
+    height: auto; 
+    text-align: left;
+    list-style: none;
+    padding: 5px;
+}
+
+.bar-top .icon-list-check img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.bar-top ul .icon-list-check {
+    width: 25rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+} 
+
+#courses .courses .bar-top ul li {
+    font-size: .9rem;
+}
+
+#courses .courses .bar-top ul li span {
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+/*carrocel cursos ampli*/
+
+#courses .carousel {
+    width: 25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    padding: 100px 0;
+}
+
+.carousel .carousel-container .carousel__item,
+.carousel .carousel-container .carousel__item--hidden {
+    display: none;
+}
+
+.carousel .carousel-container .carousel__item img {
+    width: 100%;
+    max-width: 18rem;
+    height: auto;
+}
+
+#courses .carousel .carousel-container .carousel__item--visible {
+    display: block;
+}
+
+
+#courses .carousel-actions {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#courses .carousel-actions button {
+    border-radius: 50px;
+    border: 2px solid transparent;
+    font-weight: 900;
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    margin:  0 30px;
+    color: var(--primary-color);
+    background-color: var(--light-gray-color);
+}
+
+#courses .carousel .carousel__item {
+    width: 15rem;
+    height: 27rem;
+    background-color: var(--white-color);
+    border-radius: 20px;
+    padding: 20px 15px;
+    
+
+}
+
+#courses .carousel .carousel-container {
+    flex-basis: 50%;
+    height: 100%;
+    overflow: hidden;
+    
+}
+
+#courses .carousel .carousel-container::after {
+    content: '';
+    position: relative;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    opacity: .5;
+}
+
+#courses .carousel .carousel-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+    transition: .3s ease transform;
+    
+    
+}
+
+#courses .carousel .carousel-container:hover img {
+    transform: scale(1.1);
+    background: rgba(0, 0, 0, 0.616);
+}
+
+
+#courses .carousel .carousel-container a {
+    text-decoration: none;
+    text-align: center;
+    font-weight: 800;
+    position: relative;
+    bottom: 10rem;
+    width: 130px;
+    height: auto;
+    left: 4.5rem;
+    bottom: 15rem;
+    border-radius: 20px;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    padding: 7px;
+    cursor: pointer;
+    opacity: 0;
+    
+    transition: .3s ease;
+}
+
+#courses .carousel .carousel-container a::after {
+    content: '';
+    position: relative;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    opacity: .5;
+}
+
+#courses .carousel .carousel-container:hover a {
+    opacity: 1;
+}
+
+
+#courses .carousel .carousel__item p {
+    font-size: 1rem;
+    font-weight: 800;
+    position: relative;
+    bottom: 4rem;
+    text-align: center;
+    color: var(--white-color);
+    text-shadow: 1px 1px 5px rgb(32, 32, 32);
+
+}
+
+.courses h3 {
+    color: var(--primary-color);
+} 
+
+/* ----- End Section Courses ----- */
+
+/* ----- Footer ----- */
+#footer .footer {
+    width: 100%;
+    min-height: 20vh;
+    background-color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+}
+
+#footer .footer .footer-logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 2rem;
+}
+
+#footer .footer .footer-logo img {
+    width: 150px;
+}
+
+#footer .footer p {
+    color: var(--white-color);
+    font-size: 1rem;
+    font-weight: 100;
+    padding-top: 30px;
+}
+ 
+/* ----- End Footer ----- */
+
+
+@media only screen and (min-width: 260px) {
+    #hero .hero .hero-all {
+        position: relative;
+        top: 15rem;
+    }
+
+    #hero .hero .hero-all .buttom-logo .logo img {
+        position: relative;
+        right: 10rem;
+    }
+
+    #vantagens .vantagens h3 {
+        padding-top: 5rem;
+    }
+}
+
+
+/* ----- Responsive media tablet ----- */
+@media only screen and (min-width: 768px) {
+
+    /*banner ajustes*/
+
+    #hero .hero .banner {
+        background-size: cover;
+        background-position: center ;
+    }
+
+    #hero .hero .hero-all {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background-image: linear-gradient(to right,rgba(46, 189, 89, 1), rgba(1, 101, 7, 0.5), rgba(46, 189, 89, 0.1));
+        background-size: cover;
+        top:0;
+    }
+
+    #hero .hero .hero-all .hero-info {
+        position: relative;
+        display: flex;
+        top: 10rem;
+        left: 5rem;
+        
+    }
+
+    #hero .hero .hero-all .hero-info h1 {
+        font-size: 2.5rem;
+    }
+
+    #hero .hero .hero-all .hero-info p {
+        font-size: 1rem;font-weight: 500;
+    }
+
+    /*vantagens ajustes*/
+
+    #vantagens .vantagens {
+        position: relative;
+        top: -1rem;
+    }
+
+    #vantagens .vantagens .items-vantagens  {
+        display: flex;
+        flex-direction: row;
+        column-gap: 5rem;
+        padding: 30px 0;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .vantagens .item-vantagem img {
+        width: 200px;
+        height: 200px;
+        
+    }
+
+    #courses .courses .bar-top {
+        width: 700px;
+        height: auto;
+       
+    }
+
+    #courses .courses .bar-top .bar-top-icon {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        column-gap: 10rem;
+    }
+
+    #courses .courses .bar-top ul {
+        width: 600px;
+        padding: 20px 0;
+    }
+
+    #courses .courses .bar-top .icon-list-check {
+        width: 600px;
+   
+    }
+    #courses .courses .bar-top .icon-list-check li {
+        width: 100%;
+    }
+
+}
+
+/* ----- End Responsive media tablet ----- */
+
+/* ----- Responsive media desktop ----- */
+
+@media only screen and (min-width: 1200px)  {
+
+    #hero .hero {
+        width: 100%;
+        height: 100%;
+        background-position: right;
+        background-size: contain;
+    }
+
+  
+    #hero .hero .hero-all {
+        width: 50vw;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        background-color: var(--primary-color);
+        background-position: left top;
+        border-radius: 0 50% 50% 0;
+      
+    } 
+
+    #hero .hero .hero-info .info-text h1 { 
+        font-size: 2.8rem;
+    }
+
+    #hero .hero .hero-info .info-text p {
+        font-size: 1.3rem;
+        
+    }
+
+    #hero .hero .hero-info .buttom {
+        width: 300px;
+        position: relative;
+        left: -2rem;
+        
+        /* padding: 0 10px; */
+    }
+
+    #hero .hero .hero-info .buttom a {  
+        font-size: 1.3rem;
+        padding: 10px 0;
+        position: relative;
+        top: -.2rem;
+
+    }
+
+    #hero .hero .hero-info .buttom-logo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #hero .hero .hero-info .buttom-logo .logo img {
+        width: 300px;
+        padding-top: 2rem;
+    }
+}
+
+/* ----- End Responsive media desktop ----- */
